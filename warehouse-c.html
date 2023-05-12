@@ -240,6 +240,11 @@
             </section>
         </main>
             <script>
+                if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                  document.getElementById("div-form-section-right").style.display = "none";
+                }
+                
+                
                 var today = new Date();
                 var dd = String(today.getDate()).padStart(2, '0');
                 var mm = String(today.getMonth() + 1).padStart(2, '0');
